@@ -152,13 +152,13 @@ function App(props) {
   const [showModal, setShowModal] = React.useState(false)
 
   React.useEffect(() => {
-    // codePush.sync({
-    //   updateDialog: true,
-    //   installMode: codePush.InstallMode.IMMEDIATE
-    // },
-    //   codePushStatusDidChange,
-    //   codePushDownloadDidProgress
-    // );
+    codePush.sync({
+      updateDialog: true,
+      installMode: codePush.InstallMode.IMMEDIATE
+    },
+      codePushStatusDidChange,
+      codePushDownloadDidProgress
+    );
   
     setTimeout(async () => {
       setIsLoading(false);

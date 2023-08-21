@@ -391,14 +391,16 @@ const SignInScreen = ({ navigation }) => {
 
                         </View>
                     </View>
-                    <ImageBackground source={require('../../assets/Aeon/login_btn.png')} resizeMode="stretch"style={[styles.button, (data.email != '' && data.password != '') ?
+                    
+                    <TouchableOpacity                        
+
+                        onPress={() => { setLoading(true), loginHandle() }} disabled={Loading}>
+                            <ImageBackground source={require('../../assets/Aeon/login_btn.png')} resizeMode="stretch"style={[styles.button, (data.email != '' && data.password != '') ?
                         { backgroundColor: 'transparent', } : { backgroundColor: 'transparent', },
                         {
                             width: '95%', paddingVertical: 15, marginLeft: 15,
                             borderRadius: 30, marginTop: 30,
                         }]}>
-                    <TouchableOpacity                        
-                        onPress={() => { setLoading(true), loginHandle() }} disabled={Loading}>
                         {Loading ?
                             // <ActivityIndicator size={25} color="#fff"/>
                             <LottieView source={require('../../assets/botz/game/loginloading.json')}
@@ -408,11 +410,11 @@ const SignInScreen = ({ navigation }) => {
                             :
                             <Text
                             style={{
-                                color: '#000', textAlign: 'center', fontFamily: global.appFontM,
+                                color: '#fff', textAlign: 'center', fontFamily: global.appFontM,
                                 fontSize: 20
                             }}>LOGIN</Text>}
-                    </TouchableOpacity>
                             </ImageBackground>
+                    </TouchableOpacity>
                     <TouchableOpacity style={[styles.button, {
                         width: '100%', alignItems: 'center',
                         justifyContent: 'center', paddingVertical: 10
