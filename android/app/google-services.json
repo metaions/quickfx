@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "625701175395",
+    "project_id": "quickfx-b4a84",
+    "storage_bucket": "quickfx-b4a84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625701175395:android:5f4dec30509e5d6584b856",
+        "android_client_info": {
+          "package_name": "com.quickfx.my"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625701175395-4fpfj6c6vrqtppp8b31tdsimbl9hok56.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quickfx.my",
+            "certificate_hash": "31110bca877fbe216fde77335813bd9837afe140"
+          }
+        },
+        {
+          "client_id": "625701175395-8vq9oimclce1niur74ujl8c3u3ore74r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfrOfh-qoWJ7AN1PGlwA-CKgTqq_6dwe0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625701175395-8vq9oimclce1niur74ujl8c3u3ore74r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
